@@ -11,8 +11,15 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
     private val _usersList = MutableLiveData<List<UserModel>>()
     val usersList : LiveData<List<UserModel>> = _usersList
 
+    private val _searchQuery = MutableLiveData<String>()
+    val searchQuery : LiveData<String> = _searchQuery
+
     init {
         loadUserData()
+    }
+
+    fun updateSearchQuery(query: String){
+        _searchQuery.value = query
     }
 
     private fun loadUserData(){
