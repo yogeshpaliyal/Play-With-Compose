@@ -1,7 +1,11 @@
-## Whatsapp Clone UI using Jetpack Compose
+## Whatsapp Clone UI using Jetpack Compose  
 
-#### Chat List
+### Screens
+- [x] Chat List
+- [ ] User Chat List
+- [ ] Setting Page
+
+### Chat List
 Light | Dark
 -- | --
-![Chat List Light](/images/light/chat_list.png)|
-![Chat List Dark](/images/dark/chat_list.png)
+![Chat List Light](images/light/chat_list.png)|![Chat List Dark](images/dark/chat_list.png)
