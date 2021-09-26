@@ -37,11 +37,11 @@ fun Dashboard() {
                                 Icon(Icons.Rounded.MoreVert, "Option Menu")
                             }
                         })
-                  /*  ScrollableTabRow(selectedTabIndex = 0) {
-                        Tab(selected = false, onClick = { *//*TODO*//* }) {
+                    ScrollableTabRow(selectedTabIndex = 0) {
+                        Tab(selected = false, onClick = {  }) {
                             Icon(painter = painterResource(id = com.yogeshpaliyal.whatsappclone.R.drawable.ic_baseline_camera_alt_24), "")
                         }
-                    }*/
+                    }
                 }
             }
         }, floatingActionButton = {

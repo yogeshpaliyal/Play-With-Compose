@@ -13,6 +13,7 @@ import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -21,6 +22,8 @@ import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import coil.transform.CircleCropTransformation
 import com.yogeshpaliyal.whatsappclone.data.ChatModel
+import com.yogeshpaliyal.whatsappclone.ui.theme.PrimaryTextColor
+import com.yogeshpaliyal.whatsappclone.ui.theme.SecondaryTextColor
 
 @Composable
 fun ChatsList() {
@@ -45,12 +48,18 @@ fun ChatsList() {
 @ExperimentalCoilApi
 @Composable
 fun ChatListItem(chatModel: ChatModel) {
-    Row(modifier = Modifier
-        .fillMaxWidth(1f)
-        .padding(8.dp).clickable{
+    Row(
+        modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(16.dp)
+            .clickable {
 
-        },) {
-        Image(modifier = Modifier.requiredSize(40.dp).clip(CircleShape),
+            },
+    ) {
+        Image(
+            modifier = Modifier
+                .requiredSize(40.dp)
+                .clip(CircleShape),
             painter = rememberImagePainter(data = chatModel.image,
                 builder = {
                     placeholder(com.yogeshpaliyal.whatsappclone.R.drawable.dummy_user)
@@ -62,11 +71,21 @@ fun ChatListItem(chatModel: ChatModel) {
         Column(
             Modifier
                 .weight(1f)
-                .padding(horizontal = 8.dp)) {
-            Text(text = chatModel.name,style = TextStyle(fontSize = 16.sp),color = MaterialTheme.colors.onSurface)
-            Text(text = chatModel.lastMessage, maxLines = 1, overflow = TextOverflow.Ellipsis,color = MaterialTheme.colors.onSurface)
+                .padding(horizontal = 8.dp)
+        ) {
+            Text(
+                text = chatModel.name,
+                color = PrimaryTextColor(),
+                style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold)
+            )
+            Text(
+                text = chatModel.lastMessage,
+                color = SecondaryTextColor(),
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
+            )
         }
-        Text("12:00 AM")
+        Text("12:00 AM", color = SecondaryTextColor(), fontSize = 12.sp)
 
     }
 }

@@ -22,7 +22,7 @@ private val DarkColorPalette = lightColors(
     secondary = Teal400,
     surface = Mirage900,
     onPrimary = Color.White,
-    onSurface = Color.White
+    onSurface = Color.White,
 
     /* Other default colors to override
     background = Color.White,
