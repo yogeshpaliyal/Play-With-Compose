@@ -52,12 +52,37 @@ fun Chat(chatModel: ChatModel) {
                                 .padding(8.dp)
                         ) {
 
+
+                            val isSent = message.senderId == 1
+
                             val alignment =
-                                if (message.senderId == 1) Alignment.CenterEnd else Alignment.CenterStart
-                            Text(
-                                message.message,
-                                modifier = Modifier.align(alignment = alignment)
-                            )
+                                if (isSent) Alignment.CenterEnd else Alignment.CenterStart
+                            Box(
+                                modifier = Modifier
+                                    .clip(
+                                        MaterialTheme.shapes.small.copy(
+                                            topStart = CornerSize(if (isSent) 8.dp else 0.dp),
+                                            topEnd = CornerSize(if(isSent) 0.dp else 8.dp),
+                                            bottomStart = CornerSize(8.dp),
+                                            bottomEnd = CornerSize(8.dp)
+                                        )
+                                    )
+                                    .align(alignment = alignment)
+                                    .background(MaterialTheme.colors.primary)
+                            ) {
+                                Box(
+                                    modifier = Modifier.padding(
+                                        horizontal = 8.dp,
+                                        vertical = 4.dp
+                                    )
+                                ) {
+                                    Text(
+                                        message.message,
+                                        color = MaterialTheme.colors.onPrimary
+                                    )
+                                }
+                            }
+
                         }
                     }
                 }
