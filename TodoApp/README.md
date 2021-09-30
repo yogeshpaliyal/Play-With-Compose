@@ -1,4 +1,4 @@
-## Todo using Jetpack Compose + Clean Architecture + MVVM + Room Database + Kotlin Flows + Kotlin Coroutines 
+## Todo App using Jetpack Compose + Clean Architecture + MVVM + Room Database + Kotlin Flows + Kotlin Coroutines 
 
 ### Todo App
 Light | Dark
