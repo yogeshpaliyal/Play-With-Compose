@@ -2,9 +2,9 @@
 Clubhouse UI clone built using Jetpack Compose
 
 ## Screenshots
-<img src="ClubhouseClone/screenshots/home_screen.png" alt="login-screen" width="250"/> &nbsp; &nbsp;
-<img src="ClubhouseClone/screenshots/room_screen.png" alt="login-screen" width="250"/> &nbsp; &nbsp;
-<img src="ClubhouseClone/screenshots/notification_screen.png" alt="signup-screen" width="250"/> &nbsp; &nbsp;
+<img src="https://github.com/V9vek/Play-With-Compose/blob/add-clubhouse-clone/ClubhouseClone/screenshots/home_screen.png" alt="login-screen" width="250"/> &nbsp; &nbsp;
+<img src="https://github.com/V9vek/Play-With-Compose/blob/add-clubhouse-clone/ClubhouseClone/screenshots/room_screen.png" alt="login-screen" width="250"/> &nbsp; &nbsp;
+<img src="https://github.com/V9vek/Play-With-Compose/blob/add-clubhouse-clone/ClubhouseClone/screenshots/notification_screen.png" alt="signup-screen" width="250"/> &nbsp; &nbsp;
 
 ## Video
 https://user-images.githubusercontent.com/40730402/135712010-7ac8de60-34e2-4eac-8361-2268ecb50941.mp4
