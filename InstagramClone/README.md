@@ -2,6 +2,8 @@
 Instagram UI clone built using Jetpack Compose
 
 ## Screenshots
+Screenshot 1 | Screenshot 2
+-- | --
 ![ScreenShot 1](screenshots/screenshot_1.jpg)|![ScreenShot 2](screenshots/screenshot_2.jpg)
 
 
