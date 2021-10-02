@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bege_light">#FFF3F1E6</color>
+    <color name="bege_dark">#FFF1EDD8</color>
+    <color name="green">#FF1EB961</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroundLight">@color/bege_light</color>
+    <color name="backgroundDark">@color/bege_dark</color>
+    <color name="statusBarColor">@color/bege_dark</color>
+</resources>
