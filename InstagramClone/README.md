@@ -2,14 +2,16 @@
 Instagram UI clone built using Jetpack Compose
 
 ## Screenshots
-Screenshot 1 | Screenshot 2
+Light Theme | Dark Theme
 -- | --
-![ScreenShot 1](screenshots/screenshot_1.jpg)|![ScreenShot 2](screenshots/screenshot_2.jpg)
+![ScreenShot 1](screenshots/screenshot_1.jpg)|![ScreenShot_Dark 1](screenshots/dark_1.jpg)
+-- | --
+![ScreenShot 2](screenshots/screenshot_2.jpg)|![ScreenShot_Dark 2](screenshots/dark_2.jpg)
 
 
 ## Status: 
 - [x] Home Screen
-- [ ] Dark Mode 
+- [x] Dark Mode 
 - [ ] Profile Screen
 - [ ] Explore Screen
 - [ ] Reels Screen
