@@ -20,7 +20,7 @@ object Constants {
         Story(R.drawable.avatar_2,"sanket",true),
     )
 
-    private const val DEFAULT_CAPTION = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    const val DEFAULT_CAPTION = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
     val postList = listOf(
         Post("omkar_bhostekar",R.drawable.profile,R.drawable.post_4, DEFAULT_CAPTION,475,21),
