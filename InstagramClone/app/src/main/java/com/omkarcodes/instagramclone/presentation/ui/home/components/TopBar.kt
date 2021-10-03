@@ -2,8 +2,10 @@ package com.omkarcodes.instagramclone.presentation.ui.home.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.omkarcodes.instagramclone.R
@@ -22,7 +24,8 @@ fun TopBar() {
         Image(
             painter = painterResource(id = R.drawable.instagram_text_logo),
             contentDescription = null,
-            modifier = Modifier.fillMaxHeight()
+            modifier = Modifier.fillMaxHeight(),
+            colorFilter = ColorFilter.tint(color = MaterialTheme.colors.onBackground)
         )
         Row {
             Image(
@@ -31,7 +34,8 @@ fun TopBar() {
                 modifier = Modifier
                     .padding(4.dp)
                     .fillMaxHeight()
-                    .aspectRatio(1f)
+                    .aspectRatio(1f),
+                colorFilter = ColorFilter.tint(color = MaterialTheme.colors.onBackground)
             )
             Spacer(modifier = Modifier.width(Constants.defaultPadding / 2))
             Image(
@@ -40,7 +44,8 @@ fun TopBar() {
                 modifier = Modifier
                     .padding(4.dp)
                     .fillMaxHeight()
-                    .aspectRatio(1f)
+                    .aspectRatio(1f),
+                colorFilter = ColorFilter.tint(color = MaterialTheme.colors.onBackground)
             )
         }
     }

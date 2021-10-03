@@ -40,7 +40,7 @@ fun BottomNavBar(
                             // because reels icon is little bit large
                             modifier =  Modifier.size(if(it == BottomNavItem.Reels) 23.dp else 28.dp)) },
                     label = null,
-                    selectedContentColor = Color.Black,
+                    selectedContentColor = MaterialTheme.colors.onBackground,
                     unselectedContentColor = Color(0xFFAEAFAF),
                     selected = currentRoute == it.route,
                     onClick = {

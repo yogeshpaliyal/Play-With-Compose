@@ -3,6 +3,7 @@ package com.omkarcodes.instagramclone.presentation.ui.home.components
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -133,6 +134,6 @@ fun ImageButton(
         modifier = modifier
             .size(36.dp)
             .padding(6.dp),
-        colorFilter = ColorFilter.tint(color = Color.Black)
+        colorFilter = ColorFilter.tint(color = MaterialTheme.colors.onBackground)
     )
 }
